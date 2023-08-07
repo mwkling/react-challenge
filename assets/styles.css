@@ -1,0 +1,42 @@
+/* Use a custom (non-Google) served font of your choosing */
+@font-face{
+  font-family: 'Masthead';
+  src:url('fonts/Masthead-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: #0D2436;
+  color: #FFFFFF;
+  font-family: 'Masthead';
+}
+
+.card.voted {
+  background-color: #009B86;
+  color: #FFFFFF;
+}
+
+.card:hover {
+  color: #CCCCCC;
+  background-color: #34AC9C;
+}
+
+.select-button, #submit-ballot {
+  background-color: #009B86;
+}
+
+#voted-modal {
+  color: #000;
+}
+
+/* Hardcoded some sizes here to get nicer alignment */
+.card-img {
+  height: 360px;
+  object-fit: cover;
+}
+
+.card-header {
+  height: 65px;
+}
