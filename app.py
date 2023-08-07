@@ -5,6 +5,10 @@ import data
 
 
 def build_nominee_card(nominee_data, choice):
+    """
+    Construct a bootstrap card given the nominee data.
+    Add voted class if it is selected
+    """
     if choice == nominee_data["id"]:
         card_class = "voted"
     else:
@@ -33,6 +37,10 @@ def build_nominee_card(nominee_data, choice):
 
 
 def build_category(category_data, choice):
+    """
+    Returns list including row with category name and
+    row with cards for each nominee
+    """
     return [
         dbc.Row(dbc.Col(html.H2(category_data["title"])), className="mt-5"),
         dbc.Row(
@@ -45,6 +53,10 @@ def build_category(category_data, choice):
 
 
 def build_display(choices):
+    """
+    Returns full set of layout data for all nominees
+    in all categories
+    """
     nominee_data = []
     for category in data.BALLOT_DATA["items"]:
         nominee_data.extend(build_category(category, choices[category["id"]]))

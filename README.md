@@ -2,7 +2,10 @@
 
 ## Notes
 * Used Plotly Dash (https://dash.plotly.com/)
-* Deployed to Heroku
+* Deployed to Heroku (https://dash.plotly.com/deployment#heroku-for-sharing-public-dash-apps)
+* Components from Dash Bootstrap Components project (https://dash-bootstrap-components.opensource.faculty.ai/)
+* Python code formatted with black (https://github.com/psf/black)
+* Choices stored in user browser store (https://dash.plotly.com/dash-core-components/store)
 
 ## TODO
 
