@@ -10,9 +10,9 @@ def build_nominee_card(nominee_data, choice):
     Add voted class if it is selected
     """
     if choice == nominee_data["id"]:
-        card_class = "voted"
+        card_class = "voted mt-2"
     else:
-        card_class = ""
+        card_class = "mt-2"
 
     return dbc.Col(
         dbc.Card(
