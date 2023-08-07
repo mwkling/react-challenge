@@ -52,6 +52,7 @@ def build_display(choices):
 
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 app.layout = dbc.Container(
     [
         dbc.Row(
